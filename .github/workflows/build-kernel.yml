@@ -42,8 +42,6 @@ jobs:
       run: |
         mkdir clang
         git clone https://github.com/kdrag0n/proton-clang.git -b master --depth=1 clang
-        git clone https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240307-release/Clang-19.0.0git-20240307.tar.gz
-        git clone https://github.com/kdrag0n/proton-clang.git -b master --depth=1 clang
     - name: Download mkbootimg tools
       if: env.MAKE_BOOT_IMAGE == 'true'
       run: |
